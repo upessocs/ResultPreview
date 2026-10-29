@@ -8,16 +8,13 @@ pkgs.mkShellNoCC {
 
   packages = with pkgs; [
     nodejs
-    nodePackages.browser-sync 
-    nodePackages.nodemon
+    browser-sync 
+    nodemon
     vscodium 
     firefox-devedition 
     nodejs 
-    pkgs.nodePackages.nodemon
-    pkgs.nodePackages.browser-sync 
     vim 
     curl     
-    cinnamon.nemo
   ];
 
   shellHook = ''

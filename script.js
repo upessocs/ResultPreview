@@ -7,7 +7,8 @@ const apiurl = `${host}/api/marks/`
 
 
 async function reload() {
-    append(appheader, gen(h3, "title", "Marks for Preview Only", "title"), "o")
+    append(appheader, gen(a, "title", "Marks for Preview Only", "title",""), "o")
+    append(appheader, gen(a, "title", "Home", "","/"))
 
     append(appmain, gen("section", "hero", gen("h1", "", "Marks Preview"), 'section container'), 'over')
 

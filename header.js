@@ -10,6 +10,7 @@ function loadHeader() {
             gen("span", "siteheading")
         ]
     );
+    append(appheader,gen(a,"","home","","/"))
 
     append(siteheading, gen("span", "sitetitle", gen(a, 'homelink', site.title, "", site.url)));
 
@@ -59,7 +60,7 @@ function loadHeader() {
 function toggleNavmenu() {
     navmenu.checked = !(navmenu.checked)
 }
-//loadHeader();
+// loadHeader();
 
 
 
